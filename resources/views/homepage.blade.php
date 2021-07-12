@@ -8,5 +8,6 @@
 </head>
 <body>
     <h1>HELLO</h1>
+    <p>controller and model working</p>
 </body>
 </html>
