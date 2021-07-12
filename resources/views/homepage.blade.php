@@ -11,12 +11,12 @@
 </head>
 
 <body>
-    <div class="container-xl">
-        <h1 class="text-center">Movies from DATABASE</h1>
-        <div class="row">
-            <div class="films d-flex flex-wrap">
+    <div class="container-fluid p-0">
+        <h1 class="text-center">Movies</h1>
+        <div class="row p-0">
+            <div class="films p-0 d-flex flex-wrap offset-1">
                 @foreach ($movies as $movie)
-                    <div class="film col-3">
+                    <div class="film col-4 offset-1 mt-3 mb-3 p-2  text-center">
                         <h4>Title: {{ $movie->title }}</h4>
                         <h6>Original-title: {{$movie->original_title}}</h6>
                         <p>Nationality: {{$movie->nationality}}</p>
