@@ -17,11 +17,11 @@
             <div class="films p-0 d-flex flex-wrap offset-1">
                 @foreach ($movies as $movie)
                     <div class="film col-4 offset-1 mt-3 mb-3 p-2  text-center">
-                        <h3 class="mt-2">{{ $movie->title }}</h3>
-                        <h5>Original-title: {{$movie->original_title}}</h5>
-                        <p>Nationality: {{$movie->nationality}}</p>
-                        <p>Date: {{$movie->date}}</p>
-                        <p>Rate: {{$movie->vote}}</p>
+                        <h3 class="mt-2"><strong>{{ $movie->title }}</strong></h3>
+                        <h5> <strong>Original-title:</strong> {{$movie->original_title}}</h5>
+                        <p><strong>Nationality:</strong> {{$movie->nationality}}</p>
+                        <p><strong>Date:</strong> {{$movie->date}}</p>
+                        <p><strong>Rate:</strong> {{$movie->vote}}</p>
                     </div>
                 @endforeach
             </div>
